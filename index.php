@@ -1,3 +1,3 @@
 <?php
-<h1>liuboroner</h1>
+我是一个中国人
 ?>
