@@ -1,3 +1,10 @@
-<?php
-我是一个中国人
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>这是我的第一个首页</h1>
+</body>
+</html>
