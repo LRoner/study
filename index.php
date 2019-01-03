@@ -10,7 +10,7 @@
 	<?php
 $arr=['西瓜','苹果','鸭梨'];
 foreach ($arr as $key => $value) {
-	echo "<li>我是第{$key}位<li>:我的值是{$value}!";
+	echo "<li>我是第{$key}位<li>:我的值是{$value}!</li>";
 }
 ?>
 </body>
