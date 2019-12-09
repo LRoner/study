@@ -1,4 +1,4 @@
-在服务器或者生成秘钥：sudo -Hu www-data ssh-keygen -t rsa -C "your_name@example.com"
+在服务器或者生成秘钥：sudo -Hu www ssh-keygen -t rsa -C "your_name@example.com"
 
 Liux会在home/www/下创建  .ssh文件夹，然后修改文件夹的所有者和所属组
 
@@ -6,7 +6,7 @@ sudo chown -R www:www /home/www/.ssh
 
 部署公钥生成后，执行下面的代码查看公钥，复制sudo cat /var/www/.ssh/id_rsa.pub到git hub=>seeting SSH and  
 
-如果：执行 git clone git@github.com 时，或者使用ssh -T git@github.com查看连接状态出现连接超时，出现=>ssh: connect to host github.com port 22: Connection timed out
+如果：执行sudo -Hu www git clone git@github.com 时，或者使用ssh -T git@github.com查看连接状态出现连接超时，出现=>ssh: connect to host github.com port 22: Connection timed out
 
 在id_rsa同级目录下新建config文本文件，并写入如下代码
 Host github.com
